@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Alias de Libreria Pitagoras para transferir. Copialo con un toque.">
+<title>Alias Pitágoras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{color-scheme: light;--paper:#f7f8f6;--card:#ffffff;--ink:#171c19;--ink-soft:#5c6660;--ink-faint:#8b948e;--line:#dfe4e0;--accent:#1f6b44;--accent-ink:#ffffff;--accent-soft:#e8f2eb;--shadow:0 1px 2px rgba(23,28,25,.06), 0 8px 24px -12px rgba(23,28,25,.18);}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme: dark;--paper:#10130f;--card:#191d18;--ink:#eef1ec;--ink-soft:#a6b0a8;--ink-faint:#7c857e;--line:#2c332d;--accent:#58b37f;--accent-ink:#0d1410;--accent-soft:#1d2a22;--shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);}}:root[data-theme="dark"]{color-scheme: dark;--paper:#10130f;--card:#191d18;--ink:#eef1ec;--ink-soft:#a6b0a8;--ink-faint:#7c857e;--line:#2c332d;--accent:#58b37f;--accent-ink:#0d1410;--accent-soft:#1d2a22;--shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);}body{background:var(--paper);color:var(--ink);font-family:"Public Sans", system-ui, -apple-system, sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}.wrap{max-width:30rem;margin:0 auto;padding-inline:20px;padding-block:40px 56px;display:flex;flex-direction:column;gap:28px;}header{text-align:center;display:flex;flex-direction:column;gap:6px}.marca{font-family:"Instrument Serif", Georgia, serif;font-size:2rem;line-height:1.1;text-wrap:balance;}.bajada{color:var(--ink-soft);font-size:.95rem}.tarjeta{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:26px 20px 22px;display:flex;flex-direction:column;gap:18px;align-items:center;}.rotulo{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}.alias{font-family:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;font-weight:600;font-size:clamp(1.25rem, 6.4vw, 1.85rem);letter-spacing:-.01em;word-break:break-all;text-align:center;margin-top:-8px;user-select:all;}.banco{font-size:.86rem;color:var(--ink-soft);margin-top:-10px;}button.copiar{width:100%;border:0;border-radius:11px;background:var(--accent);color:var(--accent-ink);font-family:inherit;font-size:1.05rem;font-weight:600;padding:15px 18px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:transform .12s ease, filter .15s ease;}button.copiar:hover{filter:brightness(1.06)}button.copiar:active{transform:scale(.985)}button.copiar:focus-visible{outline:3px solid var(--accent);outline-offset:3px}button.copiar svg{width:19px;height:19px;flex:none}button.copiar.listo{background:var(--accent-soft);color:var(--accent)}.aviso{min-height:1.25rem;font-size:.86rem;color:var(--ink-soft);text-align:center;}ol.pasos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;counter-reset:paso;}ol.pasos li{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:baseline;font-size:.95rem;color:var(--ink-soft);}ol.pasos li::before{counter-increment:paso;content:counter(paso);font-family:"IBM Plex Mono", monospace;font-size:.8rem;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;align-self:start;}ol.pasos b{color:var(--ink);font-weight:600}.pie{border-top:1px solid var(--line);padding-top:18px;font-size:.86rem;color:var(--ink-faint);text-align:center;text-wrap:balance;}@media (prefers-reduced-motion: reduce){*{transition:none !important}}</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="marca">Librería Pitágoras</div>
+<div class="bajada">Mina Clavero &amp; Cura Brochero</div>
+</header>
+<div class="tarjeta">
+<span class="rotulo">Alias para transferir</span>
+<div class="alias" id="alias">PITAGORAS.GALICIA</div>
+<div class="banco">Banco Galicia</div>
+<button class="copiar" id="btn" type="button">
+<svg id="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="9" y="9" width="12" height="12" rx="2"></rect>
+<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+</svg>
+<span id="btn-texto">Copiar alias</span>
+</button>
+<p class="aviso" id="aviso" role="status" aria-live="polite">Tocá el botón y pegalo en tu banco o billetera.</p>
+</div>
+<ol class="pasos">
+<li><span><b>Copiá el alias</b> con el botón de arriba.</span></li>
+<li><span>Abrí tu <b>banco o billetera</b> y entrá en Transferir.</span></li>
+<li><span><b>Pegá el alias</b> en el destinatario y confirmá el monto.</span></li>
+</ol>
+<p class="pie">Mostrá el comprobante en el mostrador antes de retirar.</p>
+</div>
+<script>
+(function(){var ALIAS = document.getElementById('alias').textContent.trim();var btn = document.getElementById('btn');var texto = document.getElementById('btn-texto');var ico = document.getElementById('ico');var aviso = document.getElementById('aviso');var timer;var TILDE = '<path d="M20 6 9 17l-5-5"></path>';var COPIA = '<rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>';function reposo(){btn.classList.remove('listo');texto.textContent = 'Copiar alias';ico.innerHTML = COPIA;aviso.textContent = 'Tocá el botón y pegalo en tu banco o billetera.';}function listo(){btn.classList.add('listo');texto.textContent = '¡Copiado!';ico.innerHTML = TILDE;aviso.textContent = 'Ahora pegalo en Transferir, dentro de tu banco o billetera.';clearTimeout(timer);timer = setTimeout(reposo, 4000);}function seleccionar(){try{var r = document.createRange();r.selectNodeContents(document.getElementById('alias'));var s = window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}btn.classList.remove('listo');texto.textContent = 'Copiar alias';ico.innerHTML = COPIA;aviso.textContent = 'El alias quedó seleccionado: mantené apretado y elegí Copiar.';}btn.addEventListener('click', function(){if (navigator.clipboard && navigator.clipboard.writeText){navigator.clipboard.writeText(ALIAS).then(listo).catch(seleccionar);} else {seleccionar();}});})();</script>
+</body>
+</html>
